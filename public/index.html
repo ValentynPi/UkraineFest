@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ucraina Fest</title>
+
+  <!-- Site icon -->
+  <link rel="icon" type="image/png" href="smalllogo.png" />
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #F2E6D6;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: calc(100vh - 60px); /* leave space for footer */
+    }
+
+    .col {
+      flex: 1;
+      border-right: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .col:last-child {
+      border-right: none;
+    }
+
+    /* Center logo in second column, top-center */
+    .center-col {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 30px;
+    }
+
+    .center-col img {
+      max-width: 180px;
+      height: auto;
+    }
+
+    footer {
+      height: 60px;
+      background-color: #4A6CF7;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="col"></div>
+
+    <div class="col center-col">
+      <img src="logo.png" alt="Logo" />
+    </div>
+
+    <div class="col"></div>
+  </div>
+
+  <footer></footer>
+
+</body>
+</html>
